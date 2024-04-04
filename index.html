@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        *{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            margin: 42px;
+            font-family: Arial;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3em;
+        }
+        .form{
+            color: white;
+            border: 1px solid white;
+            margin-top: 10px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .text{
+            color: white;
+            font-family: Arial;
+        }
+        button{
+            background-color: white;
+            padding: 10px 20px ;
+            margin: 3rem;
+            width: 9rem;
+            font-size: large;
+        }
+    </style> -->
+    <style>
+        *{
+            background-color: black;
+        }
+        h1{
+            color: white;
+            margin: 42px;
+            font-family: Arial;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3rem;
+        }
+        .text{
+            color: white;
+            font-family: Arial;
+        }
+        .form{
+            color: white;
+            border: 1px solid white;
+            margin-top: 10px;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .message {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+        #addEmployeeBtn{
+            background-color: white;
+            padding: 10px 12px;
+            margin-top: 3rem;
+            width: 9rem;
+            font-size: large;
+            margin-left: 45px;
+        }
+        h2{
+            color: white;
+            font-family: Arial;
+            margin-top: 4rem;
+            margin-left: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <h1>New Employess</h1>
+    <div class="main">
+        <div>
+            <label for="name" id="name" class="text">Enter Name</label><br>
+            <input type="text" id="name" class="form" required>
+        </div>
+        <div>
+            <label for="profession" id="prof" class="text">Enter Profession</label><br>
+            <input type="text" id="prof" class="form" required>
+        </div>
+        <div>
+            <label for="number" id="age" class="text">Enter Age</label><br>
+            <input type="number" id="age" class="form" required>
+        </div><br>
+        <br>
+    </div>
+    <span id="email-error" class="error-message"></span>
+    <button id="addBtn" type="submit">Add User</button> -->
+    <h1>New Employees</h1>
+
+    <form id="employeeForm">
+        <div class="main">
+            <div>
+                <label for="name" class="text">Enter Name</label><br>
+                <input type="text" id="name" class="form" name="name" value="john" required>
+            </div>
+            <br>
+            <div>
+                <label for="profession" class="text">Enter Profession</label><br>
+                <input type="text" id="profession" class="form" name="profession" value="Developer" required>
+            </div>
+            <br>
+            <div>
+                <label for="age" class="text">Enter Age</label><br>
+                <input type="number" id="age" class="form" name="age" value="22" required>
+            </div>
+        </div>
+        <button type="button" id="addEmployeeBtn">Add User</button>
+    </form>
+
+    <div id="message"></div>
+
+    <h2 id="Addemp">Added Employees</h2>
+    <ul id="employeeList"></ul>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
